@@ -1,0 +1,93 @@
+body{
+ background-color: black; 
+}
+
+.spaceContainer{
+  border: solid purple;
+  height: 150vh;
+  
+}
+
+.shipSelect{
+  border: solid red;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.gameBoard{
+  
+  display: flex;
+  border: solid yellow;
+  width: 100%;
+  height: 30%;
+}
+
+.leftSpaceship{
+  margin-left: 10%;
+}
+
+.srcimg{
+  width: 100%;
+  height: 100%;
+}
+
+.right{
+  border: solid blue;
+  width: 40%;
+  
+}
+
+.left{
+  border: solid palegreen;
+  width: 40%;
+}
+
+.rightSpaceship{
+  width:100px
+}
+
+.rightSpaceship1{
+ width:150px}
+
+ .rightSpaceship2{
+  width:100px
+}
+
+.rightSpaceship3{
+  width:100px
+}
+
+
+ .leftSpaceship1{
+    width:135px
+  }
+  .leftSpaceship{
+    width:135px
+  }
+  .leftSpaceship2{
+    width:135px
+  }
+  .leftSpaceship3{
+    width:135px
+  }
+ .button{
+  height: 20%;
+  display: flex;
+  }
+  .USS{
+    background-color: grey;
+    width:20%;
+    /* display: flex; */
+    margin: 10%;
+
+  }
+.ALIEN{
+  background-color: grey;
+width: 20%;
+margin:10%;
+
+
+}
+  
