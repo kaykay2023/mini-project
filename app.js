@@ -38,7 +38,60 @@ const attackAliens = () => {
 const atackUss = () => {
   alienShips[0].attack(uss);
   console.log(uss.hull);
+
+
+
+
+const checkGameOver = () => {
+  // Check if the player's hull is zero or less
+  if (uss.hull <= 0) {
+    console.log("Game over! The aliens have won!");
+    //  Display a message 
+  }
+
+  // Check if all of the alien ships have been destroyed
+  if (alienShips.length === 0) {
+    console.log(" You have defeated all of the alien ships!");
+    // 
+  }
+
+  // Check if the current alien ship has been destroyed
+  if (alienShips[0].hull <= 0) {
+    console.log("You have destroyed an alien ship!");
+
+    
+    alienShips.shift();
+  }
 };
+
+const attackAliens = () => {
+  uss.attack(alienShips[0]);
+  console.log(alienShips[0].hull);
+
+  checkGameOver();
+};
+
+const atackUss = () => {
+  alienShips[0].attack(uss);
+  console.log(uss.hull);
+
+ 
+};
+
+checkGameOver();
+
+};
+
+
+
+
+
+
+
+
+
+
+
 
 //  Math.floor(Math.random() * (6 - 3 + 1) + 3), // Alien Hull
 //  Math.floor(Math.random() * (4 - 2 + 1) + 2), // Alien Firepower
